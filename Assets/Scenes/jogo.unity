@@ -253,6 +253,7 @@ GameObject:
   - component: {fileID: 1078868524}
   - component: {fileID: 1078868527}
   - component: {fileID: 1078868528}
+  - component: {fileID: 1078868529}
   m_Layer: 0
   m_Name: Personagem
   m_TagString: Untagged
@@ -341,8 +342,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1078868523}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4.239, y: -2.5421, z: 0}
-  m_LocalScale: {x: 6.7795086, y: 6.3497095, z: 6.3005652}
+  m_LocalPosition: {x: 1.89, y: 2.7, z: 0}
+  m_LocalScale: {x: 6.7795086, y: 6.254464, z: 6.3005652}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -395,6 +396,19 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &1078868529
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1078868523}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 21ba7528da6564f4e83e37d44766fd3d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rb2d: {fileID: 0}
 --- !u!1 &1867159155
 GameObject:
   m_ObjectHideFlags: 0
@@ -482,7 +496,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: -1
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 0.38326958, g: 0.6698113, b: 0, a: 1}
+  m_Color: {r: 0.6415094, g: 0.5355998, b: 0.6415094, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
