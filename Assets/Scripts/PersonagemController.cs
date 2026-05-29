@@ -18,7 +18,9 @@ public class PersonagemController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        rb2d.velocity += new Vector2(1, 0);
+        float horizontalInput = Input.GetAxis("Horizontal");
+        rb2d.velocity += new Vector2(1, 0) * horizontalInput;
+        ;
 
     }
 }
