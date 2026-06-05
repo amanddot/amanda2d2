@@ -6,6 +6,7 @@ public class PersonagemController : MonoBehaviour
 {
     public Rigidbody2D rb2d;
     public float vel;
+    public float jumpForce;
 
 
 
@@ -23,6 +24,10 @@ public class PersonagemController : MonoBehaviour
         if (rb2d.velocity.magnitude < 5)
         {
             rb2d.velocity += new Vector2(vel, 0) * horizontalInput * Time.deltaTime;
+        }
+        if (Input.GetKey(KeyCode.Space))
+        {
+            rb2d.velocity = new Vector2(rb2d.velocity.x, jumpForce);
         }
     }
 }
